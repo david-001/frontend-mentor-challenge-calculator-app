@@ -1,0 +1,31 @@
+.button{
+  background-color: #EAE3DC;
+  width: 101px;
+  height: 64px;
+  border-radius: 10px;
+  font-size: 40px;
+  font-weight: 700;
+  color: #434A59;
+  margin: 0 12px;
+  /* margin: 0 15px; */
+  padding: 0;
+}
+
+.special{
+  font-size: 28px;
+  color:#FFFFFF;
+}
+
+.del{
+  background-color: #647198;
+}
+
+.reset{
+  width: 227px;
+  background-color: #647198;
+}
+
+.equal{
+  width: 227px;
+  background-color: #D03F2F;
+} 
