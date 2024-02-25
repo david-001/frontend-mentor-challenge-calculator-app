@@ -1,3 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap");
+
+html {
+  font-family: "League Spartan", sans-serif;
+}
+
+body{
+  font-family: "League Spartan", sans-serif;
+}
+
+
 .button{
   background-color: #EAE3DC;
   width: 101px;

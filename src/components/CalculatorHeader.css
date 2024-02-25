@@ -1,0 +1,40 @@
+
+.center{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.calc-header{
+  color: #FFFFFF;
+  margin: 96px 0 32px 0;
+  padding: 0;
+  font-weight: bold;
+  width: 533px;
+  height: 44px;
+  font-size: 12px;
+}
+
+.calc-txt{
+  font-size: 32px;
+}
+
+.theme{
+  font-size: 12px;
+}
+
+.theme-txt{
+  margin-right: 26px;
+}
+
+.theme-radio_btn{
+  width: 71px;
+  height: 26px;
+  background-color: #242D44;
+  border-radius: 13px;
+}
+
+input[type='radio']{
+  width: 16px;
+  height: 16px;
+}
