@@ -10,33 +10,175 @@ body{
 
 
 .button{
-  background-color: #EAE3DC;
   width: 101px;
   height: 64px;
   border-radius: 10px;
   font-size: 40px;
   font-weight: 700;
-  color: #434A59;
-  margin: 0 12px;
-  /* margin: 0 15px; */
+  margin: 12px 12px;
   padding: 0;
+}
+
+.theme1{
+  background-color: #EAE3DC;
+  color: #434A59;
+}
+
+.theme1:hover{
+  background-color: #FFFFFE;
+}
+
+.theme2{
+  background-color: #E5E4E1;
+  color: #36362C;
+}
+
+.theme2:hover{
+  background-color: #FFFFFF;
+}
+
+.theme3{
+  background-color: #331C4D;
+  color: #FFE53D;
+}
+
+.theme3:hover{
+  background-color: #6C34AC;
 }
 
 .special{
   font-size: 28px;
+}
+
+.theme1-special{
   color:#FFFFFF;
 }
 
-.del{
+.theme2-special{
+  color:#FFFFFF;
+}
+
+.theme2-special{
+  color:#FFFFFF;
+}
+
+.theme1-del{
   background-color: #647198;
+  border-color: #647198;
+}
+
+.theme1-del:hover{
+  background-color: #A2B2E1;
+  border-color: #A2B2E1;
+}
+
+.theme2-del{
+  background-color: #378187;
+  border-color: #378187;
+}
+
+.theme2-del:hover{
+  background-color: #62B5BC;
+  border-color: #62B5BC;
+}
+
+.theme3-del{
+  background-color: #56077C;
+  border-color: #56077C;
+}
+
+.theme3-del:hover{
+  background-color: #8631AF;
+  border-color: #8631AF;
 }
 
 .reset{
   width: 227px;
+}
+
+.theme1-reset{
   background-color: #647198;
+  border-color: #647198;
+}
+
+.theme1-reset:hover{
+  background-color: #A2B2E1;
+  border-color: #A2B2E1;
+}
+
+.theme2-reset{
+  background-color: #378187;
+  border-color: #378187;
+}
+
+.theme2-reset:hover{
+  background-color: #62B5BC;
+  border-color: #62B5BC;
+}
+
+.theme3-reset{
+  background-color: #56077C;
+  border-color: #56077C;
+}
+
+.theme3-reset:hover{
+  background-color: #8631AF;
+  border-color: #8631AF;
 }
 
 .equal{
   width: 227px;
+}
+
+.theme1-equal{
   background-color: #D03F2F;
-} 
+  border-color: #D03F2F;
+}
+
+.theme1-equal:hover{
+  background-color: #F96B5B;
+  border-color: #F96B5B;
+}
+
+.theme2-equal{
+  background-color: #C85402;
+  border-color: #C85402;
+}
+
+.theme2-equal:hover{
+  background-color: #FF8A38;
+  border-color: #FF8A38;
+}
+
+.theme3-equal{
+  background-color: #00DED0;
+  border-color: #00DED0;
+  color: #1A2327;
+}
+
+.theme3-equal:hover{
+  background-color: #93FFF8;
+  border-color: #93FFF8;
+}
+
+
+@media (max-width: 600px) {
+  .button{
+    width: 60px;
+    height: 64px;
+    font-size: 32px;
+    margin: 6px 6px;
+  }
+
+  .special{
+    font-size: 20px;
+  }
+
+  .reset{
+    width: 133px;
+  }
+
+  .equal{
+    width: 133px;
+  } 
+}

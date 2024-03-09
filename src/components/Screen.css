@@ -1,8 +1,6 @@
 .screen{
   width: 508px;
   height: 128px;
-  background-color: #181F33;
-  color: #FFFFFF;
   border-radius: 10px;
   font-size: 56px;
   font-weight: bold;
@@ -13,6 +11,29 @@
   overflow:hidden;
 }
 
+.theme1-screen{
+  background-color: #181F33;
+  color: #FFFFFF;
+}
+
+.theme2-screen{
+  background-color: #EEEEEE;
+  color: #36362C;
+}
+
+.theme3-screen{
+  background-color: #1E0936;
+  color: #FFE53D;
+}
+
 .screen-numpad{
   margin-bottom: 24px;
+}
+
+@media (max-width: 600px) {
+  .screen{
+    width: 303px;
+    height: 88px;
+    padding-right: 24px; 
+  }
 }

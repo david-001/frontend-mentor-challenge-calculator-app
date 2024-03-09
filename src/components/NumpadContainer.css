@@ -1,5 +1,4 @@
 .container{
-  background-color: #242D44;
   width: 540px;
   height: 480px;
   border-radius: 10px;
@@ -8,4 +7,23 @@
   align-items: center;
   justify-content: center;
   border-width: 0;
+}
+
+.theme1-container{
+  background-color: #242D44;
+}
+
+.theme2-container{
+  background-color: #D2CDCD;
+}
+
+.theme3-container{
+  background-color: #1E0936;
+}
+
+@media (max-width: 600px) {
+  .container{
+    width: 327px;
+    height: 420px;  
+  }
 }

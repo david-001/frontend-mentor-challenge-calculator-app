@@ -8,7 +8,11 @@ import CalculatorHeader from "./components/CalculatorHeader";
 
 const App = () => {
   const [displayTxt, setDisplayTxt] = useState("");
-  const [operator, setOperator] = useState("");
+  const [theme, setTheme] = useState("theme1");
+
+  const radioButtonHandler = (thme) => {
+    setTheme(thme);
+  };
 
   const buttonClickHandler = (e, button) => {
     e.preventDefault();
@@ -23,7 +27,11 @@ const App = () => {
         setDisplayTxt(displayTxt + "*");
         break;
       case "=":
-        setDisplayTxt(eval(displayTxt));
+        try {
+          setDisplayTxt(eval(displayTxt));
+        } catch (e) {
+          setDisplayTxt("Error");
+        }
         break;
       default:
         setDisplayTxt(displayTxt + button);
@@ -56,17 +64,29 @@ const App = () => {
     <NumpadButton
       key={button}
       value={button}
+      theme={theme}
       onClick={(e) => {
         buttonClickHandler(e, button);
       }}
     />
   ));
 
+  let class_name = ``;
+  if (theme === "theme1") {
+    class_name = `${class_name} theme1-body`;
+  } else if (theme === "theme2") {
+    class_name = `${class_name} theme2-body`;
+  } else if (theme === "theme3") {
+    class_name = `${class_name} theme3-body`;
+  }
+
   return (
-    <div>
-      <CalculatorHeader />
-      <Screen>{displayTxt}</Screen>
-      <NumpadContainer>{buttons}</NumpadContainer>
+    <div className={`${class_name} center-body`}>
+      <div>
+        <CalculatorHeader theme={theme} setTheme={radioButtonHandler} />
+        <Screen theme={theme}>{displayTxt}</Screen>
+        <NumpadContainer theme={theme}>{buttons}</NumpadContainer>
+      </div>
     </div>
   );
 };
