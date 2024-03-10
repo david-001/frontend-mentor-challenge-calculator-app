@@ -1,10 +1,10 @@
 import logo from "./logo.svg";
 import "./App.css";
 import React, { useEffect, useState } from "react";
-import Screen from "./components/Screen";
-import NumpadButton from "./components/NumpadButton";
-import NumpadContainer from "./components/NumpadContainer";
-import CalculatorHeader from "./components/CalculatorHeader";
+import Screen from "./components/Screen/Screen";
+import NumpadButton from "./components/NumpadButton/NumpadButton";
+import NumpadContainer from "./components/NumpadContainer/NumpadContainer";
+import CalculatorHeader from "./components/CalculatorHeader/CalculatorHeader";
 
 const App = () => {
   const [displayTxt, setDisplayTxt] = useState("");
